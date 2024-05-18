@@ -5,24 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> HELLO WORLD </title>
-    <link rel="icon" type="image/png" href="./images/marygrace.jpg">
+    <!-- <link rel="icon" type="image/png" href="./images/marygrace.jpg"> -->
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/global.css">
 </head>
 
 <body>
 
     <div id="header"> </div>
 
-    <section>
-        <button onclick="loadResume()">Load More Content</button>
-        <div id="resume"></div>
-    </section>
+    <div class="default-padding">
+        <div>
+            <button onclick="toggleResume()"> Resume </button>
+            <div id="resume"></div>
+        </div>
+    </div>
 
     <div id="footer"></div>
 
     <script src="./js/index.js"> </script>
     <script src="./js/header.js"> </script>
     <script src="./js/footer.js"> </script>
+
 </body>
 
 </html>

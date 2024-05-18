@@ -1,0 +1,35 @@
+/* header.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-left h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right a {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    color: #333;
+    /* Adjust this color as needed */
+    text-decoration: none;
+    /* Remove underline from links */
+}
+
+.navbar-right i {
+    font-size: 24px;
+    /* Adjust icon size as needed */
+}

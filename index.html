@@ -4,27 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> HELLO WORLD </title>
+    <title> Welcome! Mate </title>
     <!-- <link rel="icon" type="image/png" href="./images/marygrace.jpg"> -->
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/global.css">
 </head>
 
 <body>
+    <div class="video-background">
+        <video autoplay loop muted>
+            <source src="./video/vid-bg.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div>
+        <div id="navbar"> </div>
 
-    <div id="header"> </div>
-
-    <div class="default-padding">
-        <div>
-            <button onclick="toggleResume()"> Resume </button>
-            <div id="resume"></div>
+        <!-- <div class="default-padding">
+            <section>
+                <button onclick="toggleResume()"> Curriculum Vitae </button>
+                <div id="resume"></div>
+            </section>
         </div>
+
+        <div id="footer"> </div> -->
     </div>
 
-    <div id="footer"></div>
-
     <script src="./js/index.js"> </script>
-    <script src="./js/header.js"> </script>
+    <script src="./js/navbar.js"> </script>
     <script src="./js/footer.js"> </script>
 
 </body>

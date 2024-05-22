@@ -1,0 +1,79 @@
+.rNavbar {
+    position: fixed;
+    top: 65%;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 10px;
+    border: 3px solid;
+    border-radius: 10px 0 0 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+    animation: animateRightBorder 5s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
+}
+
+.rNavbar a {
+    margin: 15px 0;
+    color: white;
+}
+
+.rNavbar i {
+    font-size: 25px;
+    transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.rNavbar a:hover i {
+    text-shadow: 0 0 10px #08fbff;
+    transform: scale(1.1);
+}
+
+@keyframes animateRightBorder {
+    0% {
+        border-color: #08fbff;
+    }
+
+    25% {
+        border-color: #0f718c;
+    }
+
+    50% {
+        border-color: #0d364b;
+    }
+
+    75% {
+        border-color: #02a2c4;
+    }
+
+    100% {
+        border-color: #7effff;
+    }
+}
+
+/* 
+transform: scale(1.1);
+animation: animateRightBorderHover 5s linear infinite;
+
+@keyframes animateRightBorderHover {
+    0% {
+        color: #ff000b;
+    }
+
+    25% {
+        color: #08fbff;
+    }
+
+    50% {
+        color: #ff000b;
+    }
+
+    75% {
+        color: #08fbff;
+    }
+
+    100% {
+        color: #ff000b;
+    }
+} 
+*/

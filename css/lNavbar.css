@@ -1,0 +1,79 @@
+.lNavbar {
+    position: fixed;
+    top: 65%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 10px;
+    border: 3px solid;
+    border-radius: 0 10px 10px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+    animation: animateLeftBorder 5s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
+}
+
+.lNavbar a {
+    margin: 15px 0;
+    color: white;
+}
+
+.lNavbar i {
+    font-size: 25px;
+    transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.lNavbar a:hover i {
+    text-shadow: 0 0 10px #f16832;
+    transform: scale(1.1);
+}
+
+@keyframes animateLeftBorder {
+    0% {
+        border-color: #f16832;
+    }
+
+    25% {
+        border-color: #af1910;
+    }
+
+    50% {
+        border-color: #f3c3a6;
+    }
+
+    75% {
+        border-color: #f60113;
+    }
+
+    100% {
+        border-color: #de6325;
+    }
+}
+
+/* 
+transform: scale(1.1);
+animation: animateLeftBorderHover 5s linear infinite;
+
+@keyframes animateLeftBorderHover {
+    0% {
+        color: #ff000b;
+    }
+
+    25% {
+        color: #08fbff;
+    }
+
+    50% {
+        color: #ff000b;
+    }
+
+    75% {
+        color: #08fbff;
+    }
+
+    100% {
+        color: #ff000b;
+    }
+} 
+*/

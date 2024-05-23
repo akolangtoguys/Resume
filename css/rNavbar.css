@@ -1,34 +1,45 @@
 .rNavbar {
     position: fixed;
-    top: 65%;
+    bottom: 0;
     right: 0;
-    transform: translateY(-50%);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    padding: 12px 10px;
-    border: 3px solid;
+    padding: 10px;
+    /* border: 3px solid;
     border-radius: 10px 0 0 10px;
     background-color: rgba(0, 0, 0, 0.5);
     box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
-    animation: animateRightBorder 5s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
+    animation: animateRightBorder 5s cubic-bezier(0.25, 0.1, 0.25, 1) infinite; */
 }
 
 .rNavbar a {
-    margin: 15px 0;
+    margin: 0 15px;
     color: white;
+    text-decoration: none;
 }
 
 .rNavbar i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 25px;
+    width: 30px;
+    height: 30px;
+    padding: 8px;
+    border: 2px solid white;
+    border-radius: 10px 10px;
     transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+    animation: colorChange 5s linear infinite;
 }
 
+
 .rNavbar a:hover i {
-    text-shadow: 0 0 10px #08fbff;
+    text-shadow: 0 0 10px white;
     transform: scale(1.1);
 }
 
+/* 
 @keyframes animateRightBorder {
     0% {
         border-color: #08fbff;
@@ -49,7 +60,8 @@
     100% {
         border-color: #7effff;
     }
-}
+} 
+*/
 
 /* 
 transform: scale(1.1);
@@ -75,5 +87,28 @@ animation: animateRightBorderHover 5s linear infinite;
     100% {
         color: #ff000b;
     }
-} 
+}  
 */
+
+
+@keyframes colorChange {
+    0% {
+        color: #ff000b;
+    }
+
+    25% {
+        color: #f16832;
+    }
+
+    50% {
+        color: #ff000b;
+    }
+
+    75% {
+        color: #f16832;
+    }
+
+    100% {
+        color: #ff000b;
+    }
+}

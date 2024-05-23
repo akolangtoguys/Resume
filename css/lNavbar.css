@@ -1,27 +1,37 @@
 .lNavbar {
     position: fixed;
-    top: 65%;
+    bottom: 0;
     left: 0;
-    transform: translateY(-50%);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    padding: 10px;
     padding: 12px 10px;
-    border: 3px solid;
+    /* border: 3px solid;
     border-radius: 0 10px 10px 0;
     background-color: rgba(0, 0, 0, 0.5);
     box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
-    animation: animateLeftBorder 5s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
+    animation: animateLeftBorder 5s cubic-bezier(0.25, 0.1, 0.25, 1) infinite; */
 }
 
 .lNavbar a {
-    margin: 15px 0;
+    margin: 0 15px;
     color: white;
+    text-decoration: none;
 }
 
 .lNavbar i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 25px;
+    width: 30px;
+    height: 30px;
+    padding: 8px;
+    border: 2px solid white;
+    border-radius: 10px 10px;
     transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+    animation: colorChange 5s linear infinite;
 }
 
 .lNavbar a:hover i {
@@ -29,6 +39,7 @@
     transform: scale(1.1);
 }
 
+/* 
 @keyframes animateLeftBorder {
     0% {
         border-color: #f16832;
@@ -49,7 +60,8 @@
     100% {
         border-color: #de6325;
     }
-}
+} 
+*/
 
 /* 
 transform: scale(1.1);
@@ -77,3 +89,25 @@ animation: animateLeftBorderHover 5s linear infinite;
     }
 } 
 */
+
+@keyframes colorChange {
+    0% {
+        color: #08fbff;
+    }
+
+    25% {
+        color: #0f718c;
+    }
+
+    50% {
+        color: #0d364b;
+    }
+
+    75% {
+        color: #02a2c4;
+    }
+
+    100% {
+        color: #7effff;
+    }
+}
